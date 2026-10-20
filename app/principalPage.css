@@ -1,0 +1,66 @@
+.barraNav {
+  background-color: rgb(154, 82, 82);
+  width: 100%;
+}
+
+.navLista {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.grupoPlanes {
+  display: flex;
+  gap: 12px;
+}
+
+.butNav {
+  display: inline-block;
+  background-color: azure;
+  padding: 10px 24px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.login {
+  margin-left: 20px;
+}
+
+.menuPlanes, .infoFitTracketis{
+  width: 100%;
+  background-color: rgb(216, 189, 171);
+  height: 30rem;
+}
+.planAnuncio{
+  width: 100%;
+  background-color: rgb(148, 148, 164);
+  height: 40rem;
+  
+}
+
+.anuncio{
+  background-color: antiquewhite;
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  width: 30%;
+  padding: 0.5%;
+}
+.plan{
+  background-color: rgb(102, 64, 16);
+  width: 75%;
+  padding: 0.5%;
+}
+.listaPlanes  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 4%;
+}
