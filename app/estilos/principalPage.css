@@ -1,0 +1,245 @@
+:root {
+  --lila: #7C3AED;
+  --lila-hover: #6D28D9;
+  --violeta-oscuro: #2E1065;
+  --lavanda: #EDE9FE;
+  --fondo: #FAF8FF;
+  --blanco: #FFFFFF;
+  --texto: #27213B;
+  --texto-suave: #625875;
+  --borde: #DDD6FE;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--texto);
+  background-color: var(--fondo);
+}
+
+a {
+  color: inherit;
+}
+
+.barraNav {
+  width: 100%;
+  background-color: var(--violeta-oscuro);
+  padding: 0.625rem 5%;
+}
+
+.navLista {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.grupoPlanes {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.butNav {
+  display: inline-block;
+  background-color: var(--lila);
+  padding: 0.625rem 1.5rem;
+  border: 0.0625rem solid transparent;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--blanco);
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.butNav:hover {
+  background-color: var(--lila-hover);
+  transform: translateY(-0.125rem);
+}
+
+.login {
+  margin-left: 1.25rem;
+}
+
+.planAnuncio {
+  width: 100%;
+  min-height: 54rem;
+  background-image:url("./imagenes/fondoAnuncio.png");
+  display: flex;
+  align-items: center;
+  padding: 3.125rem 10%;
+}
+
+.anuncio {
+  background-color: rgb(0 0 0 / 50%);
+  width: min(100%, 37.5rem);
+  padding: 1.875rem;
+  border: 0.0625rem solid var(--borde);
+  border-radius: 1rem;
+  transform: translate(-4rem,-6rem)
+}
+
+.tituloAnuncio {
+  margin-top: 0;
+  font-size: 2.5rem;
+  color: var(--violeta-oscuro);
+}
+
+.contenidoAnuncio {
+  line-height: 1.7;
+  color: var(--blanco);
+}
+
+.menuPlanes {
+  width: 100%;
+  background-color: var(--fondo);
+  padding: 3.125rem 5%;
+}
+
+.tituloPlanes {
+  text-align: center;
+  margin: 0 0 2.1875rem;
+  font-size: 2rem;
+  color: var(--violeta-oscuro);
+}
+
+.listaPlanes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.listaPlanes li {
+  min-width: 0;
+}
+
+.plan {
+  background: linear-gradient(
+    145deg,
+    #4C1D95,
+    #2E1065
+  );
+  color: var(--blanco);
+  width: 100%;
+  min-height: 35rem;
+  padding: 2rem;
+  border: 0.0625rem solid rgb(255 255 255 / 12%);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0.5rem 2rem rgb(46 16 101 / 12%);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.plan:hover {
+  transform: translateY(-0.3125rem);
+  box-shadow: 0 0.875rem 1.875rem rgb(46 16 101 / 20%);
+}
+
+.plan h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.plan p {
+  line-height: 1.6;
+  flex-grow: 1;
+  color: #EDE9FE;
+}
+
+.enlacePlan {
+  display: inline-block;
+  align-self: flex-start;
+  background-color: #DDD6FE;
+  color: var(--violeta-oscuro);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.625rem 1.125rem;
+  border-radius: 0.5rem;
+  margin-top: 0.75rem;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.enlacePlan:hover {
+  background-color: var(--blanco);
+  transform: translateY(-0.125rem);
+}
+
+.infoFitTracketis {
+  width: 100%;
+  background-color: var(--fondo);
+  padding: 0 10% 3.125rem;
+}
+
+.contenidoInfoFitTracketis {
+  background: linear-gradient(
+    135deg,
+    #EDE9FE,
+    #DDD6FE
+  );
+  color: var(--violeta-oscuro);
+  padding: 2.1875rem;
+  border: 0.0625rem solid var(--borde);
+  border-radius: 1rem;
+}
+
+.contenidoInfoFitTracketis h2 {
+  margin-top: 0;
+}
+
+.contenidoInfoFitTracketis p {
+  line-height: 1.8;
+  color: #4C3B68;
+}
+
+.footer {
+  width: 100%;
+  background-color: var(--violeta-oscuro);
+  color: var(--blanco);
+  padding: 1.875rem 5%;
+  text-align: center;
+}
+
+.navFooter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin: 1.25rem 0;
+}
+
+.navFooter a,
+.redesSociales a {
+  color: #EDE9FE;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.navFooter a:hover,
+.redesSociales a:hover {
+  color: var(--blanco);
+  text-decoration: underline;
+}
+
+.redesSociales {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}

@@ -1,0 +1,117 @@
+:root {
+  --lila: #7C3AED;
+  --lila-hover: #6D28D9;
+  --violeta-oscuro: #2E1065;
+  --lavanda: #EDE9FE;
+  --fondo: #FAF8FF;
+  --blanco: #FFFFFF;
+  --texto: #27213B;
+  --texto-suave: #625875;
+  --borde: #DDD6FE;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.fondo {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+   background-image: url(./imagenes/fondoLogin.png);
+     background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fondoImagen {
+  width: 60%;
+  min-height: 100vh;
+
+}
+
+.fondoLogin {
+  width: 40%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteinerLogin{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.login {
+  background-color: var(--lila);
+  color: var(--blanco);
+  width: 28rem;
+  min-height: 30rem;
+  padding: 2.5rem;
+  border: 1px solid rgb(255 255 255 / 20%);
+  border-radius: 1.25rem;
+  box-shadow: 0 0.5rem 2rem rgb(46 16 101 / 20%);
+}
+
+.login label {
+  margin-bottom: -1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--blanco);
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.login input {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--texto);
+  background-color: var(--blanco);
+  border: 0.125rem solid var(--borde);
+  border-radius: 0.75rem;
+  outline: none;
+  transition: border-color 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.login input::placeholder {
+  color: var(--texto-suave);
+  opacity: 0.8;
+}
+
+.login button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: inherit;
+  color: var(--violeta-oscuro);
+  background-color: var(--blanco);
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+
+.login button:hover {
+  background-color: var(--lavanda);
+  color: var(--lila-hover);
+  box-shadow: 0 0.25rem 0.875rem rgb(46 16 101 / 20%);
+  transform: translateY(-0.125rem);
+}
+
+
